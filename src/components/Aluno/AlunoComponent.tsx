@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Aluno, SetCount } from "../../types";
 import { StyledAlunoComponent, StyledButton, StyledDiv } from "./styles";
+import { Aluno, SetCount } from "../../vite-env";
 
 const AlunoComponent: React.FC<{item: Aluno, setCountFather: SetCount}> = ({item, setCountFather}) => {
     const [count, setCount] = useState<number>(0);
